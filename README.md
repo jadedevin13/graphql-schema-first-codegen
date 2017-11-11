@@ -21,7 +21,7 @@ Go to your localhost:3001 then pass an [introspection query](introspection-query
 
 The introspection query can also be found in [graphql-js](https://github.com/graphql/graphql-js/blob/master/src/utilities/introspectionQuery.js)
 
-The result of the introspection query will be place in a file named **schema.json** in the jdnc-graphql-codegen.
+The result of the introspection query should be place in a file named **schema.json** in the jdnc-graphql-codegen.
 
 After that, run the following commands:
 
