@@ -1,0 +1,26 @@
+{
+  "name": "jdnc-graphql-schema",
+  "version": "0.1.0",
+  "description": "The GraphQL Schema Server",
+  "main": "index.js",
+  "author": "Jade Devin Cabatlao",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "start": "npm run compile-graphqls && npm run build && node ./dist/bundle.js",
+    "compile-graphqls": "webpack --entry ./src/compile-graphqls.js && node ./dist/bundle.js > ./src/compiled.graphqls"
+  },
+  "dependencies": {
+    "apollo-server-express": "^1.2.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "graphql": "^0.11.7",
+    "graphql-tools": "^2.7.2",
+    "node-readfiles": "^0.2.0"
+  },
+  "devDependencies": {
+    "raw-loader": "^0.5.1",
+    "webpack": "^3.8.1"
+  }
+}

@@ -1,0 +1,16 @@
+/**
+ * {{ description }}
+ *
+ * @author Jade Devin Cabatlao
+ *
+ */
+public class {{ name }}{{#if hasInterfaces}} implements {{#each interfaces}}{{this}}{{#unless @last}},{{/unless}}{{/each}}{{/if}} {
+
+{{#each fields}}
+  /**
+   * {{ description }}
+   */
+  private {{type}} {{ name }};
+
+{{/each}}
+}

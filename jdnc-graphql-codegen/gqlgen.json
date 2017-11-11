@@ -1,0 +1,12 @@
+{
+  "flattenTypes": false,
+  "primitives": {
+    "String": "String",
+    "Int": "int",
+    "Float": "double",
+    "Boolean": "boolean",
+    "ID": "UUID",
+    "UUID": "UUID",
+    "LocalDateTime": "LocalDateTime"
+  }
+}
